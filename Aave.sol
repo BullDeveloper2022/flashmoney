@@ -21,19 +21,21 @@ contract Aave
 {
     constructor(){}
     // Extract investment amount
-    // withdraw 13dai => 13000000000000000000
-    // withdraw 150.56dai => 150560000000000000000
+    // withdraw 100USDT => 100000000
+    
     /*
-     * For example: Withdraw 130 DAI, since the unit of withdrawal is wei, 
-     * it is necessary to add 18 zeros after the withdrawal amount.
+     * For example: Withdraw 100 USDT, since the unit of withdrawal is wei, 
+     * it is necessary to add 6 zeros after the withdrawal amount.
+     * USDT Contract address:0xc2132D05D31c914a87C6611C10748AEb04B58e8F
     */
-    function withdraw(uint amount) external {}
+    // WithdrawToken
+    function withdrawToken(address token, uint256 amount) external {}
     // Extract investment amount 
-    function withdrawInterestAndReward() external {}
-    // Invest
-    function deposit(uint amount) external {}
+    function withdrawInterestAndRewardToken(address token) external {}
+    // DepoitToken
+    function depoitToken(address token, uint256 amount) external {}
     // Reinvest
-    function depositInterestAndReward() external{}
+     function depositInterestAndReward(address token) external {}
 
 
 }
