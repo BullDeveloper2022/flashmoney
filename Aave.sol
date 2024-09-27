@@ -28,14 +28,7 @@ contract Aave
      * it is necessary to add 6 zeros after the withdrawal amount.
      * USDT Contract address:0xc2132D05D31c914a87C6611C10748AEb04B58e8F
     */
-    // WithdrawToken
-    function withdrawToken(address token, uint256 amount) external {}
-    // Extract investment amount 
-    function withdrawInterestAndRewardToken(address token) external {}
-    // DepoitToken
-    function depoitToken(address token, uint256 amount) external {}
-    // Reinvest
-     function depositInterestAndReward(address token) external {}
+   
 
 
 }
